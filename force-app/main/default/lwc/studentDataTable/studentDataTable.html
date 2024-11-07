@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Student Records with Inline edit" icon-name="custom:custom63">
+        <lightning-datatable
+            key-field="Id"
+            data={records}
+            columns={columns}
+            draft-values={draftValues}
+            hide-checkbox-column="true"
+            onsave={handleSave}
+            onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

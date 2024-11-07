@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Test Student Form with promise concept" icon-name="custom:custom63">
+        <div class="slds-p-around_medium">
+            <lightning-record-edit-form 
+                object-api-name="Test_Student__c" 
+                onsuccess={handleCreateStudent} 
+                onerror={handleError}>
+                
+                <lightning-input-field field-name="Name__c" onchange={handleNameChange}></lightning-input-field>
+                <lightning-input-field field-name="DOB__c" onchange={handleDOBChange}></lightning-input-field>
+                <lightning-input-field field-name="Sex__c" onchange={handleSexChange}></lightning-input-field>
+                <lightning-input-field field-name="Languages__c" onchange={handleLanguagesChange}></lightning-input-field>
+                <lightning-input-field field-name="Country__c" onchange={handleCountryChange}></lightning-input-field>
+                <lightning-input-field field-name="Hobbies__c" onchange={handleHobbiesChange}></lightning-input-field>
+
+                <lightning-button type="submit" label="Create Test Student" class="slds-m-top_medium"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

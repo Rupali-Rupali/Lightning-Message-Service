@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata"> 
+<masterLabel>Lwc Traning</masterLabel> 
+<isExposed>true</isExposed>
+<description>This Lightning Message Channel sends information from...</description> 
+<lightningMessageFields> <fieldName>Name</fieldName> 
+    <description>Name of the Account</description>
+ </lightningMessageFields> <lightningMessageFields>
+    <fieldName>Industry</fieldName> 
+    <description>Industry of the Account</description> </lightningMessageFields> 
+    <lightningMessageFields> <fieldName>Phone</fieldName>
+         <description>Phone of the Account</description>
+         </lightningMessageFields> </LightningMessageChannel>

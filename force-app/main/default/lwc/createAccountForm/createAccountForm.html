@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Create Account" icon-name="custom:custom63">
+        <div class="slds-p-around_medium">
+            <lightning-record-edit-form object-api-name="Account" onsuccess={handleCreateAccount} onerror={handleError}>
+                <!-- Name Field -->
+                <lightning-input-field field-name="Name" onchange={handleNameChange}></lightning-input-field>
+                <!-- Industry Field -->
+                <lightning-input-field field-name="Industry" onchange={handleIndustryChange}></lightning-input-field>
+                <!-- Phone Field -->
+                <lightning-input-field field-name="Phone" onchange={handlePhoneChange}></lightning-input-field>
+                <!-- Submit Button -->
+                <lightning-button type="submit" label="Create Account" class="slds-m-top_medium"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

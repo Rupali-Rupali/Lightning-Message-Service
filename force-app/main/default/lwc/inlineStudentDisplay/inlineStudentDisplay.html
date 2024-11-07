@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Student Records" icon-name="custom:custom63">
+        <lightning-datatable
+            key-field="Id"
+            data={records}
+            columns={columns}
+            hide-checkbox-column="true"
+            onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </lightning-card>
+
+    <template if:true={isEditing}>
+        <lightning-card title="Edit Student Record" icon-name="custom:custom63">
+            <div class="slds-p-around_medium">
+                <lightning-input label="Name" value={editRecord.Name__c} onchange={handleEditNameChange}></lightning-input>
+                <lightning-input label="Date of Birth" type="date" value={editRecord.DOB__c} onchange={handleEditDOBChange}></lightning-input>
+                <lightning-combobox label="Sex" value={editRecord.Sex__c} options={sexOptions} onchange={handleEditSexChange}></lightning-combobox>
+                <lightning-combobox label="Languages" value={editRecord.Languages__c} options={languagesOptions} onchange={handleEditLanguagesChange}></lightning-combobox>
+                <lightning-combobox label="Country" value={editRecord.Country__c} options={countryOptions} onchange={handleEditCountryChange}></lightning-combobox>
+                <lightning-input label="Hobbies" value={editRecord.Hobbies__c} onchange={handleEditHobbiesChange}></lightning-input>
+                <lightning-button label="Save" onclick={saveChanges}></lightning-button>
+                <lightning-button label="Cancel" onclick={cancelEdit}></lightning-button>
+            </div>
+        </lightning-card>
+    </template>
+</template>

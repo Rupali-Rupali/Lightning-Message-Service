@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata"> 
+<masterLabel>Lwc Traning</masterLabel> 
+<isExposed>true</isExposed>
+<description>This Lightning Message Channel sends information from...</description> 
+<!-- <lightningMessageFields> <fieldName>recordName</fieldName> 
+<description>Message To Send</description> 
+</lightningMessageFields> <lightningMessageFields>
+         <fieldName>fieldName</fieldName> 
+         <description>My source?</description> 
+</lightningMessageFields>  -->
+   
+    <lightningMessageFields>
+        <fieldName>Name__c</fieldName>
+        <description>Name of the Student</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>DOB__c</fieldName>
+        <description>Date of Birth of the Student</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>Sex__c</fieldName>
+        <description>Gender of the Student</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>Languages__c</fieldName>
+        <description>Languages spoken by the Student</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>Country__c</fieldName>
+        <description>Country of the Student</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>Hobbies__c</fieldName>
+        <description>Hobbies of the Student</description>
+    </lightningMessageFields>
+</LightningMessageChannel>
